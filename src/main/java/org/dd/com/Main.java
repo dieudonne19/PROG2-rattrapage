@@ -14,19 +14,19 @@ public class Main {
         appartements.add(appart1);
 
 
-        Immeuble Immeubles = new Immeuble("im1","Radisson", 6);
-        Immeubles.setAppartements(appartements);
+        Immeuble Immeuble = new Immeuble("im1","Radisson", 6);
+        Immeuble.setAppartements(appartements);
         List<Immeuble> immeubles = new ArrayList<>();
-        immeubles.add(Immeubles);
+        immeubles.add(Immeuble);
 
         Quartier Quartier = new Quartier("q1", "Analamahitsy", immeubles);
 
-        appart1.setEndroit_name(Immeubles.getNom());
-        appart2.setEndroit_name(Immeubles.getNom());
+        appart1.setEndroit_name(Immeuble.getNom());
+        appart2.setEndroit_name(Immeuble.getNom());
 
-        // System.out.println(Quartier.compterAppartements());V
-        // System.out.println(Immeubles.compterAppartements()); V
-        // System.out.println(Quartier.trouverAppartement(appart1));
-        System.out.println(Immeubles);
+        System.out.println(Quartier.compterAppartements());
+        System.out.println(Immeuble.compterAppartements());
+        System.out.println(Quartier.trouverAppartement(appart1));
+        System.out.println(appartements);
     }
 }
