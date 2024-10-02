@@ -28,6 +28,7 @@ public class Quartier extends Endroit {
             for (Appartement a : i.getAppartements()){
                 if (Objects.equals(a.getEndroit().getNom(), super.getNom())) {
                     appartement1 = a;
+                    break;
                 }
             }
         }

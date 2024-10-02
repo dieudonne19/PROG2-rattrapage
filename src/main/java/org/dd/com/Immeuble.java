@@ -5,20 +5,22 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @ToString
 @Getter
+@Setter
 @EqualsAndHashCode
 
 public class Immeuble extends Endroit {
     private int etages;
     private List<Appartement> appartements;
 
-    public Immeuble(String id, String nom, int etages, List<Appartement> appartements) {
+    public Immeuble(String id, String nom, int etages) {
         super(id, nom);
         this.etages = etages;
-        this.appartements = appartements;
+        this.appartements = new ArrayList<>();
     }
 
     @Override
