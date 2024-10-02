@@ -22,17 +22,17 @@ public class Quartier extends Endroit {
 
 
     public Appartement trouverAppartement(Appartement appartement) {
-        Appartement appartement1 = null;
+        List<Appartement> appartements = new ArrayList<>();
         List<Immeuble> immeublesDansQuartier = new ArrayList<>();
         for (Immeuble i : immeubles) {
             for (Appartement a : i.getAppartements()){
-                if (a.getEndroit_name() == super.getNom()) {
-                    appartement1 = a;
+                if (a == appartement) {
+                    appartements.add(a);
                     // break;
                 }
             }
         }
-        return appartement1;
+        return appartements.getFirst();
     }
 
     @Override
