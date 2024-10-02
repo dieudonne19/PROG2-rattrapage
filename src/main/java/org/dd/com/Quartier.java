@@ -26,7 +26,7 @@ public class Quartier extends Endroit {
         List<Immeuble> immeublesDansQuartier = new ArrayList<>();
         for (Immeuble i : immeubles) {
             for (Appartement a : i.getAppartements()){
-                if (Objects.equals(a.getEndroit().getNom(), super.getNom())) {
+                if (Objects.equals(a.getEndroit_name(), super.getNom())) {
                     appartement1 = a;
                     break;
                 }

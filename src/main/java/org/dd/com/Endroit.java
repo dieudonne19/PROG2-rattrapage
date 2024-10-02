@@ -14,6 +14,5 @@ public abstract class Endroit {
     private String id;
     private String nom;
 
-
     public abstract int compterAppartements();
 }

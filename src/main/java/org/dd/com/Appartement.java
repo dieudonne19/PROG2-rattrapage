@@ -14,7 +14,7 @@ public class Appartement {
     private String description;
     private double loyer_mensuel;
     private AppartementStatus status;
-    private Endroit endroit;
+    private String endroit_name;
 
     public Appartement(String id, String titre, String description, double loyer_mensuel, AppartementStatus status) {
         this.id = id;
@@ -22,6 +22,7 @@ public class Appartement {
         this.description = description;
         this.loyer_mensuel = loyer_mensuel;
         this.status = status;
-        this.endroit = null;
+        this.endroit_name = null;
     }
+    // setter l'endroit
 }

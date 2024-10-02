@@ -21,8 +21,12 @@ public class Main {
 
         Quartier Quartier = new Quartier("q1", "Analamahitsy", immeubles);
 
+        appart1.setEndroit_name(Immeubles.getNom());
+        appart2.setEndroit_name(Immeubles.getNom());
 
-        System.out.println(Quartier.compterAppartements());
-        System.out.println(Immeubles.compterAppartements());
+        // System.out.println(Quartier.compterAppartements());V
+        // System.out.println(Immeubles.compterAppartements()); V
+        // System.out.println(Quartier.trouverAppartement(appart1));
+        System.out.println(Immeubles);
     }
 }
